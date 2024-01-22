@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hocky's</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/43ff3a26aa.js"
@@ -16,10 +23,182 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header>This is header</header>
-    <main>this is main</main>
-    <footer>this is footer</footer>
+  <body class="font-manrope px-5 lg:px-0">
+    <header class="max-w-[1170px] mx-auto">
+      <div class="navbar py-5 lg:py-12">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="mr-3 lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a class="text-sm font-bold hover:text-[#ff4240]">Home</a>
+              </li>
+              <li>
+                <a class="text-sm font-bold hover:text-[#ff4240]">About</a>
+              </li>
+              <li>
+                <a class="text-sm font-bold hover:text-[#ff4240]">Pages</a>
+              </li>
+              <li>
+                <a class="text-sm font-bold hover:text-[#ff4240]">Blogs</a>
+              </li>
+              <li>
+                <a class="text-sm font-bold hover:text-[#ff4240]">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <a>
+            <img src="./Images/Hockey’s.png" alt="" />
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a
+                class="text-[16px] font-bold hover:text-[#ff4240] hover:bg-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[16px] font-bold hover:text-[#ff4240] hover:bg-white"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[16px] font-bold hover:text-[#ff4240] hover:bg-white"
+                >Pages</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[16px] font-bold hover:text-[#ff4240] hover:bg-white"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[16px] font-bold hover:text-[#ff4240] hover:bg-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i
+            class="mr-5 hidden lg:inline-block fa-solid fa-magnifying-glass"
+          ></i>
+          <a class="py-2 px-4 rounded-lg bg-[#FF4240] text-white font-bold"
+            >Get Ticket</a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="max-w-[1170px] mx-auto">
+      <section class="banner-area relative">
+        <div class="carousel w-full mb-4 lg:mb-0">
+          <!-- slide one -->
+          <div id="slide1" class="carousel-item relative w-full rounded-lg">
+            <img
+              src="./Images/banner.png"
+              class="w-full h-[200px] md:h-[550px] lg:h-[550px]"
+            />
+            <div
+              class="absolute flex gap-3 transform -translate-y-1/2 -translate-x-1/2 lg:-translate-x-0 md:-translate-x-0 left-[50%] md:left-5 lg:left-5 -bottom-2 md:bottom-4 lg:bottom-4"
+            >
+              <a
+                href="#slide3"
+                class="px-3 py-1 rounded-full bg-[#131318] text-white"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="px-3 py-1 rounded-full bg-[#131318] text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide two -->
+          <div id="slide2" class="carousel-item relative w-full rounded-lg">
+            <img
+              src="./Images/program2.png"
+              class="w-full h-[200px] md:h-[550px] lg:h-[550px]"
+            />
+            <div
+              class="absolute flex gap-3 transform -translate-y-1/2 -translate-x-1/2 lg:-translate-x-0 md:-translate-x-0 left-[50%] md:left-5 lg:left-5 -bottom-2 md:bottom-4 lg:bottom-4"
+            >
+              <a
+                href="#slide1"
+                class="px-3 py-1 rounded-full bg-[#131318] text-white"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="px-3 py-1 rounded-full bg-[#131318] text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide three -->
+          <div id="slide3" class="carousel-item relative w-full rounded-lg">
+            <img
+              src="./Images/program1.png"
+              class="w-full h-[200px] md:h-[550px] lg:h-[550px]"
+            />
+            <div
+              class="absolute flex gap-3 transform -translate-y-1/2 -translate-x-1/2 lg:-translate-x-0 md:-translate-x-0 left-[50%] md:left-5 lg:left-5 -bottom-2 md:bottom-4 lg:bottom-4"
+            >
+              <a
+                href="#slide2"
+                class="px-3 py-1 rounded-full bg-[#131318] text-white"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="px-3 py-1 rounded-full bg-[#131318] text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="banner-box lg:max-w-[500px] p-4 lg:p-8 rounded-lg bg-[#131318] lg:absolute bottom-10 right-10"
+        >
+          <h2 class="text-xl lg:text-2xl text-white mb-4">
+            Meet all the heroes from the field
+          </h2>
+          <p class="text-sm text-[#FFFFFF99]">
+            Discover the prowess of hockey legends, witnessing their skills,
+            triumphs, and the spirit that defines their field brilliance.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="text-3xl">this is footer</footer>
   </body>
 </html>
