@@ -27,6 +27,20 @@
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
+      .section-header {
+        color: #131318;
+        font-weight: 800;
+        margin-bottom: 24px;
+      }
+      .sub-header {
+        color: #131318;
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      .para-text {
+        color: #13131899;
+        font-size: 16px;
+      }
     </style>
   </head>
   <body class="font-manrope px-5 lg:px-0">
@@ -116,7 +130,7 @@
             ></i>
           </span>
           <a
-            class="py-2 px-4 rounded-lg bg-[#FF4240] text-white font-bold cursor-pointer hover:bg-white hover:text-[#ff4240] hover:border-[2px]"
+            class="py-2 px-4 rounded-lg bg-[#FF4240] text-white text-sm lg:text-[16px] font-bold cursor-pointer hover:bg-white hover:text-[#ff4240] border-[2px]"
             >Get Ticket</a
           >
         </div>
@@ -124,13 +138,13 @@
     </header>
     <main class="max-w-[1170px] mx-auto">
       <!-- Banner section Starts -->
-      <section class="banner-area relative">
+      <section class="banner-area relative mb-10 lg:mb-24">
         <div class="carousel w-full mb-4 lg:mb-0">
           <!-- slide one -->
           <div id="slide1" class="carousel-item relative w-full rounded-lg">
             <img
               src="./Images/banner.png"
-              class="w-full h-[200px] md:h-[550px] lg:h-[550px]"
+              class="w-full h-[200px] md:h-[350px] lg:h-[550px]"
             />
             <div
               class="absolute flex gap-3 transform -translate-y-1/2 -translate-x-1/2 lg:-translate-x-0 md:-translate-x-0 left-[50%] md:left-5 lg:left-5 -bottom-2 md:bottom-4 lg:bottom-4"
@@ -151,7 +165,7 @@
           <div id="slide2" class="carousel-item relative w-full rounded-lg">
             <img
               src="./Images/program2.png"
-              class="w-full h-[200px] md:h-[550px] lg:h-[550px]"
+              class="w-full h-[200px] md:h-[350px] lg:h-[550px]"
             />
             <div
               class="absolute flex gap-3 transform -translate-y-1/2 -translate-x-1/2 lg:-translate-x-0 md:-translate-x-0 left-[50%] md:left-5 lg:left-5 -bottom-2 md:bottom-4 lg:bottom-4"
@@ -172,7 +186,7 @@
           <div id="slide3" class="carousel-item relative w-full rounded-lg">
             <img
               src="./Images/program1.png"
-              class="w-full h-[200px] md:h-[550px] lg:h-[550px]"
+              class="w-full h-[200px] md:h-[350px] lg:h-[550px]"
             />
             <div
               class="absolute flex gap-3 transform -translate-y-1/2 -translate-x-1/2 lg:-translate-x-0 md:-translate-x-0 left-[50%] md:left-5 lg:left-5 -bottom-2 md:bottom-4 lg:bottom-4"
@@ -203,6 +217,76 @@
         </div>
       </section>
       <!-- Banner Section ends -->
+
+      <!-- Club area starts -->
+      <section class="club-area mb-10 lg:mb-24">
+        <hr class="border-dashed border-[#33333a33] border-[1px]" />
+        <!-- club-top -->
+        <div class="club-top py-5 lg:py-8 text-center w-full lg:w-3/5 mx-auto">
+          <h2 class="section-header text-xl lg:text-3xl">
+            Professional Hockeys Club
+          </h2>
+          <p class="para-text">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <hr class="border-dashed border-[#33333a33] border-[1px] mb-10" />
+
+        <!-- Club-bottom -->
+        <div
+          class="club-bottom grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
+          <!-- club one -->
+          <div class="club-1 text-center">
+            <div
+              class="radial-progress text-red-500 mb-6"
+              style="--value: 87"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <h2 class="sub-header font-semibold">Prayer Facility</h2>
+            <p class="para-text">Separated Prayer Facility for everyone</p>
+          </div>
+          <!-- club two -->
+          <div class="club-2 text-center">
+            <div
+              class="radial-progress text-[#49d293] mb-6"
+              style="--value: 87"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <h2 class="sub-header font-semibold">Experienced Coach</h2>
+            <p class="para-text">Experienced Coach Facility for everyone</p>
+          </div>
+          <!-- club three -->
+          <div class="club-3 text-center">
+            <div
+              class="radial-progress text-[#ffb546] mb-6"
+              style="--value: 90"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <h2 class="sub-header font-semibold">Senior Player</h2>
+            <p class="para-text">Opportunity to iteract with Senior players</p>
+          </div>
+          <div class="club-4 text-center">
+            <div
+              class="radial-progress text-[#4c8df1] mb-6"
+              style="--value: 80"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <h2 class="sub-header font-semibold">Training Ground</h2>
+            <p class="para-text">Well facilated training ground for everyone</p>
+          </div>
+        </div>
+      </section>
+      <!-- Club area ends -->
     </main>
     <footer class="text-3xl">this is footer</footer>
   </body>
