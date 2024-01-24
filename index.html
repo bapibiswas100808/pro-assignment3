@@ -50,13 +50,13 @@
         padding: 8px 16px;
       }
       .project-btn:hover {
-        background-color: #ffffff;
+        background-color: transparent;
         color: #ff4240;
       }
     </style>
   </head>
-  <body class="font-manrope px-5 lg:px-0">
-    <header class="max-w-[1170px] mx-auto">
+  <body class="font-manrope">
+    <header class="max-w-[1170px] mx-auto px-5 lg:px-0">
       <!-- Navbar starts -->
       <div class="navbar py-5 lg:py-12">
         <div class="navbar-start">
@@ -150,7 +150,7 @@
       </div>
       <!-- Navbar ends -->
     </header>
-    <main class="max-w-[1170px] mx-auto">
+    <main class="max-w-[1170px] mx-auto px-5 lg:px-0">
       <!-- Banner section Starts -->
       <section class="banner-area relative mb-10 lg:mb-24">
         <div class="carousel w-full mb-4 lg:mb-0">
@@ -221,7 +221,7 @@
         <div
           class="banner-box lg:max-w-[500px] p-4 lg:p-8 rounded-lg bg-[#131318] lg:absolute bottom-10 right-10"
         >
-          <h2 class="text-xl lg:text-2xl text-white mb-4">
+          <h2 class="text-[16px] lg:text-2xl text-white mb-4">
             Meet all the heroes from the field
           </h2>
           <p class="text-sm text-[#FFFFFF99]">
@@ -257,7 +257,7 @@
               style="--value: 87"
               role="progressbar"
             >
-              87%
+              <span class="text-[#131318] font-extrabold">87%</span>
             </div>
             <h2 class="sub-header font-semibold">Prayer Facility</h2>
             <p class="para-text">Separated Prayer Facility for everyone</p>
@@ -269,7 +269,7 @@
               style="--value: 95"
               role="progressbar"
             >
-              95%
+              <span class="text-[#131318] font-extrabold">95%</span>
             </div>
             <h2 class="sub-header font-semibold">Experienced Coach</h2>
             <p class="para-text">Experienced Coach Facility for everyone</p>
@@ -281,18 +281,19 @@
               style="--value: 90"
               role="progressbar"
             >
-              90%
+              <span class="text-[#131318] font-extrabold">90%</span>
             </div>
             <h2 class="sub-header font-semibold">Senior Player</h2>
             <p class="para-text">Opportunity to iteract with Senior players</p>
           </div>
+          <!-- Club four -->
           <div class="club-4 text-center">
             <div
               class="radial-progress text-[#4c8df1] mb-6"
               style="--value: 80"
               role="progressbar"
             >
-              80%
+              <span class="text-[#131318] font-extrabold">80%</span>
             </div>
             <h2 class="sub-header font-semibold">Training Ground</h2>
             <p class="para-text">Well facilated training ground for everyone</p>
@@ -306,7 +307,9 @@
         <hr class="border-dashed border-[#33333a33] border-[1px]" />
         <!-- Program-top -->
         <div class="py-5 lg:py-8 text-center w-full lg:w-3/5 mx-auto">
-          <h2 class="section-header text-xl lg:text-3xl">Program Sections</h2>
+          <h2 class="section-header text-xl lg:text-3xl">
+            Our Popular Programs
+          </h2>
           <p class="para-text">
             Nurturing talent from teenage prospects through our junior ranks,
             our program shapes elite professionals with dedication, skill, and
@@ -318,13 +321,15 @@
         <!-- Program-bottom -->
         <div class="program-bottom grid gap-6 grid-cols-1 lg:grid-cols-2">
           <!-- program one -->
-          <div class="card relative">
-            <figure>
+          <div class="card">
+            <figure class="relative">
               <img
                 src="./Images/program1.png"
                 alt="program1"
                 class="w-full h-[235px] md:h-auto lg:h-auto"
               />
+              <!-- Overlay layer -->
+              <div class="absolute inset-0 bg-[#131318] opacity-30"></div>
             </figure>
             <div
               class="text-white p-4 absolute bottom-2 lg:bottom-5 left-2 lg:left-5"
@@ -348,12 +353,14 @@
           </div>
           <!-- program two -->
           <div class="card relative">
-            <figure>
+            <figure class="relative">
               <img
                 src="./Images/program2.png"
                 alt="program1"
                 class="w-full h-[235px] md:h-auto lg:h-auto"
               />
+              <!-- Overlay layer -->
+              <div class="absolute inset-0 bg-black opacity-30"></div>
             </figure>
             <div
               class="text-white p-4 absolute bottom-2 lg:bottom-5 left-2 lg:left-5"
@@ -377,12 +384,14 @@
           </div>
           <!-- program three -->
           <div class="card relative lg:col-span-2">
-            <figure>
+            <figure class="relative">
               <img
                 src="./Images/program3.png"
                 alt="program1"
                 class="w-full min-h-[235px] md:h-auto lg:h-auto bg-center bg-contain"
               />
+              <!-- Overlay layer -->
+              <div class="absolute inset-0 bg-black opacity-30"></div>
             </figure>
             <div
               class="text-white p-4 absolute bottom-2 lg:bottom-5 left-2 lg:left-5 w-full lg:w-1/2"
@@ -650,7 +659,11 @@
         <div
           class="flex gap-10 flex-col lg:flex-row border-[1px] border-[#1313181A] p-2 lg:p-5 rounded-lg"
         >
-          <img src="./Images/client.png" alt="" class="" />
+          <img
+            src="./Images/client.png"
+            alt=""
+            class="h-[300px] md:h-[500px] lg:h-auto w-full lg:w-auto"
+          />
 
           <div class="client-faq w-full">
             <!-- accor one -->
@@ -720,7 +733,7 @@
               </div>
             </div>
             <!-- Accor six -->
-            <div class="collapse collapse-plus rounded-none">
+            <div class="collapse collapse-plus border-b-2 rounded-none">
               <input type="radio" name="my-accordion-3" />
               <div class="collapse-title text-xl font-medium">Pricing</div>
               <div class="collapse-content">
@@ -728,6 +741,18 @@
                   Transparent hockey training pricing: competitive rates,
                   flexible plans, ensuring affordability and value for players'
                   skill development journey.
+                </p>
+              </div>
+            </div>
+            <!-- Accor seven -->
+            <div class="collapse collapse-plus rounded-none">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">Facilities</div>
+              <div class="collapse-content">
+                <p class="para-text text-sm">
+                  Exciting hockey training Facilities like competitive players,
+                  flexible schedule, ensuring participation and value for
+                  players' skill development stages.
                 </p>
               </div>
             </div>
@@ -842,10 +867,10 @@
             Social Media
           </p>
           <div class="space-x-6 lg:space-x-8">
-            <i class="fa-brands fa-twitter text-xl"></i>
-            <i class="fa-brands fa-facebook-f text-xl"></i>
-            <i class="fa-brands fa-instagram text-xl"></i>
-            <i class="fa-brands fa-github text-xl"></i>
+            <i class="fa-brands fa-twitter text-xl cursor-pointer"></i>
+            <i class="fa-brands fa-facebook-f text-xl cursor-pointer"></i>
+            <i class="fa-brands fa-instagram text-xl cursor-pointer"></i>
+            <i class="fa-brands fa-github text-xl cursor-pointer"></i>
           </div>
         </div>
       </section>
@@ -857,7 +882,7 @@
       >
         <!-- footer col one -->
         <nav class="flex flex-col space-y-4 text-center lg:text-left">
-          <header class="text-3xl font-bold">Get In Touch</header>
+          <header class="text-2xl lg:text-3xl font-bold">Get In Touch</header>
           <p class="text-[#ffffff99]">
             Connect with us easily: <br />
             Reach out, inquire, and engage <br />
@@ -875,7 +900,7 @@
         <!-- footer col two -->
         <div class="flex justify-between lg:gap-40">
           <nav class="flex flex-col space-y-4 text-center lg:text-left">
-            <header class="text-xl lg:text-3xl font-bold">Company</header>
+            <header class="text-xl lg:text-2xl font-bold">Company</header>
             <a class="link link-hover text-[#ffffff99]">About Us</a>
             <a class="link link-hover text-[#ffffff99]">Leadership</a>
             <a class="link link-hover text-[#ffffff99]">Careers</a>
@@ -884,7 +909,7 @@
           </nav>
           <!-- footer col three -->
           <nav class="flex flex-col space-y-4 text-center lg:text-left">
-            <header class="text-xl lg:text-3xl font-bold">Support</header>
+            <header class="text-xl lg:text-2xl font-bold">Support</header>
             <a class="link link-hover text-[#ffffff99]">Help center</a>
             <a class="link link-hover text-[#ffffff99]">FAQ</a>
             <a class="link link-hover text-[#ffffff99]">Ticket Support</a>
@@ -893,7 +918,7 @@
         </div>
         <!-- footer col four -->
         <nav class="flex flex-col space-y-4 text-center lg:text-left">
-          <header class="text-xl lg:text-3xl font-bold">Services</header>
+          <header class="text-xl lg:text-2xl font-bold">Services</header>
           <a class="link link-hover text-[#ffffff99]">Academy</a>
           <a class="link link-hover text-[#ffffff99]">Group Lesson</a>
           <a class="link link-hover text-[#ffffff99]">Private Lesson</a>
